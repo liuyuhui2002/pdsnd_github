@@ -127,7 +127,7 @@ def load_data(city, month, day):
     # print("\nLoaded data\nCity: {}\nMonth: {}\nDay: {}".format(city, month, day))
 
     # reset df index
-    df = df.reset_index()
+    # df = df.reset_index()
 
     # save to excel to validate filtered result
     # df.to_csv("filtered_city.csv")
@@ -330,7 +330,7 @@ def raw_data(df):
         # show raw data for 5 rows
         for i in range(num, num+5):
             # show 5 rows with all columns except last 3 columns which are customized columns
-            print(df.loc[i][:-3], "\n")
+            print(df.iloc[i][:-3], "\n")
 
         # prepare for next 5 rows
         num += 5
