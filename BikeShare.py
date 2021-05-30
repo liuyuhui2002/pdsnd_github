@@ -1,3 +1,5 @@
+# This is the Python script for US BikeShare project
+
 import time
 import pandas as pd
 
